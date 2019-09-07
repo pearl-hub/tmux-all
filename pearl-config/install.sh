@@ -4,6 +4,7 @@ function post_install(){
     pearl emerge ${PEARL_PKGREPONAME}/tpm-extra
     pearl emerge ${PEARL_PKGREPONAME}/tmux-env
     pearl emerge ${PEARL_PKGREPONAME}/tmux-multi
+    pearl emerge ${PEARL_PKGREPONAME}/txum
 
     return 0
 }
@@ -22,6 +23,7 @@ function pre_remove(){
         pearl remove ${PEARL_PKGREPONAME}/tpm-extra
         pearl remove ${PEARL_PKGREPONAME}/tmux-env
         pearl remove ${PEARL_PKGREPONAME}/tmux-multi
+        pearl remove ${PEARL_PKGREPONAME}/txum
     fi
     return 0
 }
